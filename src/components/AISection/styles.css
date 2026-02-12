@@ -1,0 +1,18 @@
+/* AI Section Styles */
+/* Most styles are handled via Tailwind in specific DOE directives, but we keep this file for architecture compliance and complex animations */
+
+@keyframes float-brain {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.brain-visual {
+    animation: float-brain 6s ease-in-out infinite;
+}

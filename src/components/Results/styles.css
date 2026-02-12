@@ -1,0 +1,7 @@
+/* Results Section Styles */
+/* Architecture compliance file */
+
+.results-grid {
+    display: grid;
+    gap: 2rem;
+}

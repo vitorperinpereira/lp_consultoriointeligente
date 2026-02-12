@@ -1,0 +1,50 @@
+/* CSS for wireframe Founders override/supplement */
+.founder-card {
+    background-color: #1E293B;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+}
+
+.founder-card:hover {
+    border-color: #FFD64B;
+    box-shadow: 0 0 20px rgba(255, 214, 75, 0.1);
+}
+
+.founder-img-placeholder {
+    width: 200px;
+    height: 200px;
+    border-radius: 2rem;
+    background-color: #334155;
+    margin-bottom: 2rem;
+    border: 2px solid transparent;
+}
+
+.founder-card:hover .founder-img-placeholder {
+    border-color: #FFD64B;
+}
+
+.founder-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #F8FAFC;
+}
+
+.founder-role {
+    color: #FFD64B;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.founder-bio {
+    text-align: center;
+    color: #94A3B8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

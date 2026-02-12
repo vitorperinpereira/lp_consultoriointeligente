@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tooth Left Part (Black) - Organic sweep -->
+  <path d="M180 80 C 100 80, 60 180, 80 280 C 100 380, 180 450, 256 460 C 200 420, 140 320, 160 180 C 170 120, 190 90, 220 85 L 180 80 Z" fill="black" />
+  
+  <!-- Tooth Right Part (Yellow) - Organic sweep -->
+  <path d="M332 80 C 412 80, 452 180, 432 280 C 412 380, 332 450, 256 460 C 312 420, 372 320, 352 180 C 342 120, 322 90, 292 85 L 332 80 Z" fill="#FFD64B" />
+
+  <!-- Rocket Ship (Centered and stylized) -->
+  <g transform="translate(256, 260) rotate(-40) translate(-30, -60)">
+    <!-- Rocket Body -->
+    <path d="M30 0 C 48 30, 48 90, 30 130 C 12 90, 12 30, 30 0 Z" fill="white" stroke="black" stroke-width="6" />
+    
+    <!-- Fins -->
+    <path d="M15 100 L 0 125 L 12 125 L 18 110" fill="black" />
+    <path d="M45 100 L 60 125 L 48 125 L 42 110" fill="black" />
+    
+    <!-- Window -->
+    <circle cx="30" cy="50" r="10" stroke="black" stroke-width="4" fill="white" />
+    <circle cx="30" cy="50" r="4" fill="black" />
+    
+    <!-- Propulsion/Fire -->
+    <path d="M22 135 L 30 160 L 38 135" fill="#FFD64B" />
+    <path d="M25 135 L 30 145 L 35 135" fill="black" opacity="0.5" />
+  </g>
+</svg>

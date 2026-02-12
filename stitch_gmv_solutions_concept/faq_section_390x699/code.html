@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GMV Educação - FAQ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f4c025",
+            "background-light": "#f8f8f5",
+            "background-dark": "#0B0B0D",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"],
+            "title": ["Montserrat", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .gradient-text {
+      background: linear-gradient(to right, #ffffff, #f4c025);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 0px;
+    }
+    body {
+      background-color: #0B0B0D;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display text-white/90 antialiased">
+<!-- Mobile Container (390x699 aspect ratio simulation) -->
+<div class="relative mx-auto w-[390px] h-[699px] bg-background-dark overflow-hidden flex flex-col shadow-2xl border border-white/5">
+<!-- Background Decor -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-primary/5 blur-[80px] rounded-full -ml-24 -mb-24"></div>
+<!-- Scrollable Content Area -->
+<div class="flex-1 overflow-y-auto custom-scrollbar px-6 pt-12 pb-8">
+<!-- Header Section -->
+<header class="mb-10 text-center">
+<h2 class="font-title text-3xl font-bold gradient-text leading-tight mb-4">
+          Dúvidas Frequentes
+        </h2>
+<p class="text-white/50 text-sm font-medium">
+          Tudo o que você precisa saber sobre a transformação digital da sua clínica.
+        </p>
+</header>
+<!-- Accordion List -->
+<div class="space-y-4">
+<!-- FAQ Item 1 (Active) -->
+<div class="group bg-white/5 rounded-2xl border border-primary/40 p-5 transition-all duration-300">
+<div class="flex justify-between items-center gap-4">
+<h3 class="text-[15px] font-semibold text-white leading-snug">
+              Como a IA ajuda minha clínica?
+            </h3>
+<div class="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-primary/10 border border-primary/30">
+<span class="material-icons text-primary text-sm">remove</span>
+</div>
+</div>
+<div class="mt-3 text-sm text-white/60 leading-relaxed">
+            A IA otimiza desde o agendamento inteligente até a análise preditiva de faturamento, permitindo que você foque no que importa: o paciente.
+          </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="group bg-white/5 rounded-2xl border border-white/10 p-5 hover:border-white/20 transition-all duration-300">
+<div class="flex justify-between items-center gap-4">
+<h3 class="text-[15px] font-semibold text-white/90 leading-snug">
+              Preciso entender de tecnologia?
+            </h3>
+<div class="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-white/5 border border-white/10 group-hover:border-primary/50">
+<span class="material-icons text-primary text-sm">add</span>
+</div>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="group bg-white/5 rounded-2xl border border-white/10 p-5 hover:border-white/20 transition-all duration-300">
+<div class="flex justify-between items-center gap-4">
+<h3 class="text-[15px] font-semibold text-white/90 leading-snug">
+              Quanto tempo para ver resultados?
+            </h3>
+<div class="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-white/5 border border-white/10 group-hover:border-primary/50">
+<span class="material-icons text-primary text-sm">add</span>
+</div>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="group bg-white/5 rounded-2xl border border-white/10 p-5 hover:border-white/20 transition-all duration-300">
+<div class="flex justify-between items-center gap-4">
+<h3 class="text-[15px] font-semibold text-white/90 leading-snug">
+              Como funciona o diagnóstico gratuito?
+            </h3>
+<div class="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-white/5 border border-white/10 group-hover:border-primary/50">
+<span class="material-icons text-primary text-sm">add</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Professional Support Hint -->
+<div class="mt-8 flex items-center justify-center gap-2 py-4 px-6 bg-white/[0.03] rounded-full border border-white/5">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+<p class="text-[11px] font-medium text-white/40 uppercase tracking-widest">
+          Suporte especializado 24/7 disponível
+        </p>
+</div>
+</div>
+<!-- CTA Footer Section -->
+<div class="bg-background-dark/80 backdrop-blur-xl border-t border-white/5 px-6 pt-6 pb-10">
+<div class="text-center mb-6">
+<p class="text-white/40 text-xs mb-2">Ainda tem dúvidas?</p>
+<p class="text-white/90 text-sm font-semibold">Transforme sua gestão hoje mesmo.</p>
+</div>
+<button class="w-full bg-white text-black font-bold py-5 rounded-full text-sm uppercase tracking-tight shadow-[0_0_20px_rgba(255,255,255,0.1)] active:scale-[0.98] transition-all">
+        Quero meu diagnóstico gratuito
+      </button>
+<!-- Security Trust Badge -->
+<div class="mt-4 flex items-center justify-center gap-1 opacity-30">
+<span class="material-icons text-xs">shield</span>
+<span class="text-[10px] font-medium uppercase tracking-tighter">Ambiente 100% Seguro e Privado</span>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,126 @@
+/* Footer Styles */
+.footer-container {
+    padding: 64px 0;
+    background-color: #000000;
+    /* Slate 900 */
+    border-top: 1px solid rgba(148, 163, 184, 0.1);
+    color: #A0A0A0;
+    margin-top: 96px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        padding: 96px 0;
+        margin-top: 128px;
+    }
+}
+
+.footer-glow {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-color: #FFD64B;
+    filter: blur(400px);
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.footer-wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .footer-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 32px;
+        gap: 64px;
+    }
+}
+
+/* Links */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .footer-links {
+        gap: 32px;
+    }
+}
+
+.footer-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #A0A0A0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #FFD64B;
+}
+
+/* Socials */
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.social-icon-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A0A0A0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon-link:hover {
+    background-color: rgba(255, 214, 75, 0.1);
+    border-color: #FFD64B;
+    color: #FFD64B;
+    transform: translateY(-2px);
+}
+
+/* Copyright */
+.footer-copyright {
+    width: 100%;
+    max-width: 1280px;
+    margin: 32px auto 0;
+    padding: 32px 16px 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.1);
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+    .footer-copyright {
+        margin-top: 48px;
+        font-size: 14px;
+    }
+}
