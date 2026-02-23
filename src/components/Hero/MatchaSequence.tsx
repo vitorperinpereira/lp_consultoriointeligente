@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 import { useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 
 const FRAME_COUNT = 15;
@@ -43,7 +43,7 @@ export default function MatchaSequence() {
         setImages(loadedImages);
     }, []);
 
-    const renderFrame = (index: number) => {
+    const renderFrame = useCallback((index: number) => {
         const canvas = canvasRef.current;
         const ctx = canvas?.getContext("2d");
         const img = images[index];
@@ -74,7 +74,7 @@ export default function MatchaSequence() {
 
         // Reset transform to avoid accumulation if strict mode runs twice (though mostly safe here)
         ctx.setTransform(1, 0, 0, 1, 0, 0);
-    };
+    }, [images]);
 
     useMotionValueEvent(frameIndex, "change", (latest) => {
         if (!isLoaded) return;
@@ -87,7 +87,7 @@ export default function MatchaSequence() {
         if (isLoaded) {
             renderFrame(0);
         }
-    }, [isLoaded]);
+    }, [isLoaded, renderFrame]);
 
     return (
         <div ref={containerRef} className="h-[150vh] relative w-full flex justify-center mt-12 mb-24">

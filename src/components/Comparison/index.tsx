@@ -52,16 +52,15 @@ const itemVariants: Variants = {
 
 export default function Comparison() {
     return (
-        <section className="py-section-mobile md:py-section bg-black relative overflow-hidden">
-            {/* Ambient Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(244,192,37,0.03)_0%,transparent_70%)] pointer-events-none" />
+        <section className="py-section-mobile md:py-section bg-transparent relative overflow-hidden">
+            {/* Transparent background to show global luxury pattern */}
 
             <div className="container mx-auto px-6 max-w-5xl relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-24"
+                    className="text-center mb-10"
                 >
                     <h2 className="text-4xl md:text-5xl lg:text-7xl font-heading font-black mb-6 text-white uppercase tracking-tighter">
                         Onde você está <span className="font-serif italic capitalize text-gradient-gold lowercase">hoje?</span>
@@ -147,9 +146,9 @@ export default function Comparison() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8, duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="mt-20 flex justify-center"
+                    className="mt-10 flex justify-center px-6"
                 >
-                    <button className="px-12 py-6 bg-white text-black font-heading font-black text-lg md:text-xl rounded-full shadow-premium hover:bg-brand hover:scale-105 active:scale-95 transition-all duration-300 uppercase tracking-tight">
+                    <button className="w-full sm:w-auto px-8 md:px-12 py-5 md:py-6 bg-white text-black font-heading font-black text-lg md:text-xl rounded-full shadow-premium hover:bg-brand hover:scale-105 active:scale-95 transition-all duration-300 uppercase tracking-tight">
                         Quero meu diagnóstico gratuito
                     </button>
                 </motion.div>

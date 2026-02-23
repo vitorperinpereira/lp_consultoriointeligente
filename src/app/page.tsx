@@ -1,5 +1,6 @@
 
 import Header from "@/components/Header";
+import StandardBackground from "@/components/StandardBackground";
 import Hero from "@/components/Hero";
 import Solutions from "@/components/Solutions";
 import AISection from "@/components/AISection";
@@ -12,21 +13,26 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="relative bg-black min-h-screen text-white">
+    <main className="relative bg-black min-h-screen text-white overflow-x-hidden selection:bg-brand selection:text-black">
+      {/* Global Luxury Background Pattern */}
+      <StandardBackground />
 
-      <Header />
+      <div className="relative z-10">
+        <Header />
 
-      <Hero />
-      <section id="solucoes"><Solutions /></section>
-      <section id="ia"><AISection /></section>
-      <section id="resultados"><Results /></section>
-      <Comparison />
-      <Audience />
-      <Founders />
-      <section id="faq"><FAQ /></section>
+        <Hero />
+        <section id="solucoes"><Solutions /></section>
+        <section id="ia"><AISection /></section>
+        <section id="resultados"><Results /></section>
+        <div className="bg-black/40 backdrop-blur-[2px]">
+          <Comparison />
+        </div>
+        <Audience />
+        <Founders />
+        <section id="faq"><FAQ /></section>
 
-      <Footer />
-
+        <Footer />
+      </div>
     </main>
   );
 }

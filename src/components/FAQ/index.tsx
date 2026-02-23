@@ -39,7 +39,7 @@ export default function FAQ() {
     };
 
     return (
-        <section className="py-section-mobile md:py-section bg-black relative flex flex-col items-center overflow-hidden">
+        <section className="py-section-mobile md:py-section bg-transparent relative flex flex-col items-center overflow-hidden">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -51,7 +51,7 @@ export default function FAQ() {
             <div className="w-full max-w-2xl mx-auto px-6 relative z-10">
 
                 {/* Header */}
-                <header className="mb-20 text-center">
+                <header className="mb-10 text-center">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black mb-6 text-white uppercase tracking-tighter">
                         DÚVIDAS <span className="font-serif italic capitalize text-gradient-gold lowercase">frequentes</span>
                     </h2>
@@ -116,10 +116,12 @@ export default function FAQ() {
                     <h4 className="text-2xl md:text-3xl font-heading font-black text-black mb-4 uppercase tracking-tighter">TRANSFORME SUA GESTÃO AGORA</h4>
                     <p className="text-black/70 font-sans text-sm md:text-base mb-8 max-w-sm mx-auto">Pare de perder dinheiro com processos manuais. Comece hoje.</p>
 
-                    <button className="w-full bg-black text-white font-heading font-black py-6 rounded-full text-lg shadow-2xl hover:scale-[1.02] active:scale-95 transition-all uppercase tracking-tighter flex items-center justify-center gap-3">
-                        QUERO MEU DIAGNÓSTICO
-                        <ArrowRight className="w-6 h-6" />
-                    </button>
+                    <div className="flex justify-center">
+                        <button className="w-full sm:w-auto bg-black text-white font-heading font-black py-5 md:py-6 px-10 rounded-full text-lg shadow-2xl hover:scale-[1.02] active:scale-95 transition-all uppercase tracking-tighter flex items-center justify-center gap-3">
+                            QUERO MEU DIAGNÓSTICO
+                            <ArrowRight className="w-6 h-6" />
+                        </button>
+                    </div>
 
                     <div className="mt-6 flex items-center justify-center gap-2 opacity-50">
                         <ShieldCheck className="w-4 h-4 text-black" />

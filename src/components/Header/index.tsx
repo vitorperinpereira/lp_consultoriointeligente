@@ -2,6 +2,7 @@
 
 import { landing } from "@/content/landing";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Menu } from "lucide-react";
 import "./styles.css";
 
@@ -11,7 +12,7 @@ export default function Header() {
             <div className="header-wrapper">
                 {/* LOGO */}
                 <Link href="/" className="logo-box">
-                    <img src="/logo.svg" alt="GMV Dental Logo" className="logo-img" />
+                    <Image src="/logo.svg" alt="GMV Dental Logo" width={40} height={40} className="logo-img" />
                     <span className="logo-text">
                         GMV<span className="logo-text-highlight">.AI</span>
                     </span>
@@ -32,15 +33,13 @@ export default function Header() {
 
                 {/* CTA & MOBILE MENU */}
                 <div className="header-actions">
-                    <a
-                        href="https://gmvconsultorios.com.br/socialmedia"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <Link
+                        href="/socialmedia"
                         className="btn-cta-header"
                     >
                         {landing.header.cta}
                         <ArrowRight size={14} className="arrow-header" />
-                    </a>
+                    </Link>
 
                     <button className="btn-mobile-menu" aria-label="Abrir menu">
                         <Menu size={24} />

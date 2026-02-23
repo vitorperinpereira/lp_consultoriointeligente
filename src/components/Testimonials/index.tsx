@@ -27,7 +27,7 @@ export default function Testimonials() {
 
                             {/* Text */}
                             <p className="testimonial-text">
-                                "{item.text}"
+                                &ldquo;{item.text}&rdquo;
                             </p>
 
                             {/* Author */}

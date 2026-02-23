@@ -1,14 +1,14 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Linkedin, Instagram, ArrowRight } from "lucide-react";
 
 export default function Founders() {
     return (
-        <section className="py-section-mobile md:py-section bg-black relative flex flex-col items-center overflow-hidden">
+        <section className="py-section-mobile md:py-section bg-transparent relative flex flex-col items-center overflow-hidden">
 
-            {/* Background pattern nuance */}
-            <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-pattern"></div>
+            {/* Removed background pattern for pure black finish */}
 
             <div className="max-w-2xl mx-auto px-6 w-full relative z-10">
                 <div className="text-center mb-16">
@@ -22,10 +22,12 @@ export default function Founders() {
 
                 {/* Founder 1: Isa Novaes */}
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-10 mb-20 group">
-                    <div className="relative w-full md:w-1/2 aspect-[4/5] bg-surface-dark overflow-hidden rounded-[2rem] shadow-premium photo-frame">
-                        <img
+                    <div className="relative w-full md:w-1/2 aspect-[4/5] bg-black overflow-hidden rounded-[2rem] border border-brand/10 shadow-premium photo-frame group-hover:border-brand/30 transition-colors duration-500">
+                        <Image
                             src="/isa.jpeg"
                             alt="Isa Novaes"
+                            fill
+                            sizes="(min-width: 768px) 50vw, 100vw"
                             className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                         />
                         {/* Decorative Gradient Overlay */}
@@ -53,10 +55,12 @@ export default function Founders() {
 
                 {/* Founder 2: Vitor Perin - Reverse Layout */}
                 <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-10 mb-24 group">
-                    <div className="relative w-full md:w-1/2 aspect-[4/5] bg-surface-dark overflow-hidden rounded-[2rem] shadow-premium photo-frame">
-                        <img
+                    <div className="relative w-full md:w-1/2 aspect-[4/5] bg-black overflow-hidden rounded-[2rem] border border-brand/10 shadow-premium photo-frame group-hover:border-brand/30 transition-colors duration-500">
+                        <Image
                             src="/vitor.png"
                             alt="Vitor Perin"
+                            fill
+                            sizes="(min-width: 768px) 50vw, 100vw"
                             className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                         />
                         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent z-10" />
@@ -82,17 +86,20 @@ export default function Founders() {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="text-center p-10 rounded-[2.5rem] bg-surface-light border border-white/5 shadow-premium mb-12">
-                    <h4 className="text-xl font-heading font-black text-gradient-gold mb-6 uppercase tracking-[0.2em]">O PORQUÊ DA GMV</h4>
-                    <p className="font-sans text-base md:text-lg leading-relaxed text-gray-200 opacity-80 max-w-lg mx-auto">
+                <div className="text-center p-10 rounded-[2.5rem] bg-black border border-brand/20 shadow-[0_0_50px_rgba(244,192,37,0.05)] mb-12 relative overflow-hidden group">
+                    <div className="absolute inset-0 bg-brand/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <h4 className="text-xl font-heading font-black text-gradient-gold mb-6 uppercase tracking-[0.2em] relative z-10">O PORQUÊ DA GMV</h4>
+                    <p className="font-sans text-base md:text-lg leading-relaxed text-gray-200 opacity-80 max-w-lg mx-auto relative z-10">
                         Isa conhecia as dores. Vitor criou as armas. Juntos, fundaram a GMV para liderar a revolução das dentistas empresárias.
                     </p>
                 </div>
 
-                <a href="#form" className="group w-full bg-white text-black py-6 px-10 rounded-full font-heading font-black text-center text-lg shadow-premium hover:bg-brand transition-all duration-300 flex items-center justify-center gap-3 uppercase tracking-tighter active:scale-95">
-                    QUERO MEU DIAGNÓSTICO GRATUITO
-                    <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
-                </a>
+                <div className="flex justify-center px-6 mb-12">
+                    <a href="#form" className="group w-full sm:w-auto bg-white text-black py-5 md:py-6 px-8 md:px-10 rounded-full font-heading font-black text-center text-lg shadow-premium hover:bg-brand transition-all duration-300 flex items-center justify-center gap-3 uppercase tracking-tighter active:scale-95">
+                        QUERO MEU DIAGNÓSTICO GRATUITO
+                        <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
+                    </a>
+                </div>
 
             </div>
         </section>

@@ -1,18 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="bg-black border-t border-white/10 pt-20 pb-10 overflow-hidden">
+        <footer className="bg-transparent border-t border-white/10 pt-20 pb-10 overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
 
                     {/* Brand */}
                     <div className="space-y-8 col-span-1 md:col-span-1">
                         <Link href="/" className="inline-flex items-center gap-3">
-                            <img src="/logo.svg" alt="Rocket" className="w-10 h-10 opacity-90 drop-shadow-[0_0_10px_rgba(255,192,37,0.3)]" />
+                            <Image src="/logo.svg" alt="Rocket" width={40} height={40} className="w-10 h-10 opacity-90 drop-shadow-[0_0_10px_rgba(255,192,37,0.3)]" />
                             <span className="text-2xl font-black font-heading text-white tracking-tighter uppercase">GMV<span className="text-brand">.AI</span></span>
                         </Link>
                         <p className="font-sans text-gray-400 leading-relaxed text-sm md:text-base opacity-80 max-w-xs">

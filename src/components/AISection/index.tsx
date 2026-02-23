@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function AISection() {
     return (
-        <section className="py-section-mobile md:py-section bg-black relative overflow-hidden">
+        <section className="pt-8 pb-section-mobile md:pb-section bg-transparent relative overflow-hidden">
 
             {/* Ambient Background Glow - High Energy */}
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-brand/10 blur-[100px] rounded-full pointer-events-none" />
@@ -92,8 +92,8 @@ export default function AISection() {
                     </div>
 
                     {/* Content */}
-                    <div className="text-left lg:pl-10">
-                        <div className="inline-block px-4 py-1.5 rounded-full bg-surface-light border border-white/10 text-brand text-[10px] font-black mb-8 tracking-[0.2em] uppercase">
+                    <div className="text-center lg:text-left lg:pl-10">
+                        <div className="inline-block px-4 py-1.5 rounded-full bg-surface-light border border-white/10 text-brand text-[10px] font-black mb-4 tracking-[0.2em] uppercase">
                             TECNOLOGIA PROPRIETÁRIA
                         </div>
 
@@ -102,12 +102,12 @@ export default function AISection() {
                             <span className="font-serif italic capitalize text-gradient-gold drop-shadow-md lowercase">novo sócio</span>
                         </h2>
 
-                        <p className="font-sans text-text-secondary text-lg md:text-xl mb-10 leading-relaxed opacity-80 max-w-xl">
+                        <p className="font-sans text-text-secondary text-lg md:text-xl mb-10 leading-relaxed opacity-80 max-w-xl mx-auto lg:mx-0">
                             Enquanto você foca no mocho, nossa tecnologia cuida de todo o resto.
                             Um sistema treinado especificamente para a odontologia empresarial.
                         </p>
 
-                        <div className="space-y-4 mb-12">
+                        <div className="space-y-4 mb-12 text-left">
                             {[
                                 "Atendimento humanizado e personalizado 24/7.",
                                 "Aprendizado contínuo com base nos seus dados.",
@@ -122,7 +122,7 @@ export default function AISection() {
                             ))}
                         </div>
 
-                        <button className="px-10 py-5 bg-white text-black font-black text-lg rounded-full hover:bg-brand transition-all duration-300 shadow-premium active:scale-95 uppercase tracking-tighter">
+                        <button className="w-full sm:w-auto px-10 py-5 bg-white text-black font-black text-lg rounded-full hover:bg-brand transition-all duration-300 shadow-premium active:scale-95 uppercase tracking-tighter">
                             CONHECER TECNOLOGIA
                         </button>
                     </div>

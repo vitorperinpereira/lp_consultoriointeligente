@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat, Playfair_Display } from "next/font/google"; // Playfair for the luxury italic feel
+import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",

@@ -53,8 +53,8 @@ const config: Config = {
                 '8xl': ['6rem', { lineHeight: '1', letterSpacing: '-0.04em' }],
             },
             spacing: {
-                'section': '8rem',
-                'section-mobile': '5rem',
+                'section': '2.5rem',
+                'section-mobile': '1.5rem',
             },
             backgroundImage: {
                 'gold-gradient': 'linear-gradient(135deg, #C5A059 0%, #F5E0A3 50%, #C5A059 100%)', // Metallic Gold Gradient

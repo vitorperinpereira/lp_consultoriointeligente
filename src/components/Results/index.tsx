@@ -45,13 +45,13 @@ const itemVariants: Variants = {
 
 export default function Results() {
     return (
-        <section className="py-section-mobile md:py-section bg-black relative overflow-hidden">
+        <section className="py-section-mobile md:py-section bg-transparent relative overflow-hidden">
             <div className="container mx-auto px-6 max-w-5xl relative z-10 text-center">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    className="mb-24"
+                    className="mb-10"
                 >
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black mb-6 text-white uppercase tracking-tighter">
                         RESULTADOS <br />
@@ -101,9 +101,9 @@ export default function Results() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1, duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="mt-24"
+                    className="mt-10 px-6 flex justify-center"
                 >
-                    <button className="px-10 py-5 bg-white text-black font-black text-lg rounded-full shadow-premium hover:bg-brand transition-all duration-300 active:scale-95 uppercase tracking-tighter">
+                    <button className="w-full sm:w-auto px-8 md:px-10 py-5 bg-white text-black font-black text-lg rounded-full shadow-premium hover:bg-brand transition-all duration-300 active:scale-95 uppercase tracking-tighter">
                         COMEÇAR TRANSFORMAÇÃO
                     </button>
                 </motion.div>

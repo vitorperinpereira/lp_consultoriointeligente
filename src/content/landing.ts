@@ -16,6 +16,7 @@ export const landing = {
     header: {
         items: [
             { label: "Soluções", href: "#solucoes" },
+            { label: "Secretária", href: "/secretaria" },
             { label: "IA", href: "#ia" },
             { label: "Resultados", href: "#resultados" },
             { label: "FAQ", href: "#faq" },
